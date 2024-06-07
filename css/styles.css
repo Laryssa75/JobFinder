@@ -1,16 +1,15 @@
 /*Geral*/
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
-}
-
 body{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+   
 }
 
-h1, h2, h3, h4, h5, p, span{
+.titulo h1, .titulo p{
     margin: 0;
-    color: #ffffff;
+    color: #FFF;
+    font-weight: bold;
 }
 
 .container{
@@ -52,11 +51,9 @@ nav:after{
 }
 
 #logo{
-    width: auto;
-    height: auto;
+    width: 50px;
+    height: 50px;
     margin-top: 25px;
-    max-width: 50px;
-    max-height: 50px;
 }
 
 .nav-container ul {
@@ -104,6 +101,7 @@ nav:after{
 }
 
 #search-form h1 {
+    padding-top: 10em;
     font-size: 40px;
 }
 
@@ -160,7 +158,7 @@ nav:after{
     border-radius: 10px;
 }
 
-#last-jobs-container ul li{
+#lastjobs-container ul li{
     list-style: none;
     text-align: left;
     border-bottom: solid 1px #ccc;
@@ -180,7 +178,7 @@ nav:after{
     height: 100%;
 }
 
-/* company img*/
+/* company img */
 
 .company-box {
     display: inline-block;
@@ -189,21 +187,38 @@ nav:after{
     padding-left: 1%;
 }
 
+.company-box img {
+    width: 100%;
+    height: auto;
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 5px;
+}
+
 .company-info {
     display: inline-block;
     margin-left: 50px;
     margin-top: 10px;
     text-align: left;
     position: absolute;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .company-info h3 {
     font-weight: 300;
     margin-bottom: 10px;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .company-info p {
     font-weight: bold;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* company locality */
@@ -214,6 +229,8 @@ nav:after{
     position: absolute;
     height: 100%;
     line-height: 80px;
+    margin-bottom: 20px;
+    vertical-align: middle;
 }
 
 .locality i, .locality p {
@@ -265,7 +282,7 @@ nav:after{
     margin-top: 50px;
 }
 
-.btnjobs {
+.btn-jobs {
     text-transform: uppercase;
     background-color: #fff;
     color: #3381f3;
@@ -277,7 +294,47 @@ nav:after{
     transition: 0.5s;
 }
 
-.btnjobs:hover {
+.btn-jobs:hover {
     background-color: #3381f3;
+    color: #fff;
+}
+
+/* send jobs container */
+#sendjobs-container {
+    background: url('../img/scenario1.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 25%;
+    padding: 15em 0;
+}
+
+#sendjobs-container h2, #sendjobs-container p {
+    width: 600px;
+    color: #fff;
+}
+
+#sendjobs-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#sendjobs-container p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.light-btn {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.light-btn:hover {
+    background-color: transparent;
     color: #fff;
 }
