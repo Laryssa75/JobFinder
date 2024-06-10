@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    max-width:  1920px;
+    max-width: 1920px;
     width: 100%;
 }
 
@@ -304,7 +304,7 @@ nav:after{
     background: url('../img/scenario1.jpg') no-repeat;
     background-size: cover;
     background-position: 0 25%;
-    padding: 15em 0;
+    padding: 25em 0;
 }
 
 #sendjobs-container h2, #sendjobs-container p {
@@ -342,7 +342,9 @@ nav:after{
 /* jobfinder */
 .status-container {
     text-align: center;
-    padding: 5em 0;
+    padding: 40em 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .title-center {
@@ -364,7 +366,8 @@ nav:after{
     display: inline-block;
     text-align: center;
     width: 24.5%;
-    margin-top: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     height: 100px;
@@ -385,4 +388,66 @@ nav:after{
 
 .status-text {
     font-size: 20px;
+}
+
+/* testmony container */
+#testmony-container {
+    background: url('../img/scenario2.jpg') no-repeat;
+    background-size: cover;
+    padding: 8em 0;
+    max-height: 1000px;
+    max-width: auto;
+}
+
+#testmony-container h2, #testmony-container p {
+    color: #fff;
+    text-align: center;
+}
+
+#testmony-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#testmony-container p {
+    margin-bottom: 50px;
+}
+
+#testmony-container .testmony-box .testmony-msg {
+    background-color: #fff;
+    color: #666;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    margin: 35px auto;
+    font-size: italic;
+}
+
+.testmony-msg:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testmony-box img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.testmony-name {
+    font-weight: bold;
+    font-size: 15px;
 }
