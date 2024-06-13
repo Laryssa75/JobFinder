@@ -122,7 +122,7 @@ nav:after{
 }
 
 #search-form input[type=submit] {
-    background-color: #3381F3;
+    background-color: #735fee;
     text-transform: uppercase;
     color: #FFF;
     cursor: pointer;
@@ -130,7 +130,7 @@ nav:after{
 }
 
 #search-form input[type=submit] {
-    background-color: #2B79EB;
+    background-color: #735fee;
 }
 
 /* seção de últimos empregos */
@@ -284,9 +284,9 @@ nav:after{
 
 .btn-jobs {
     text-transform: uppercase;
-    background-color: #fff;
-    color: #5c6777;
-    border: 2px solid #666;
+    background-color: #735fee;
+    color: #fff;
+    border: 2px solid #735fee;
     border-radius: 5px;
     text-decoration: none;
     padding: 10px 20px;
@@ -295,8 +295,8 @@ nav:after{
 }
 
 .btn-jobs:hover {
-    background-color: #677283;
-    color: #fff;
+    background-color: #fff;
+    color: #735fee;
 }
 
 /* send jobs container */
@@ -516,7 +516,7 @@ nav:after{
 
 .article-box h4 a {
     text-decoration: none;
-    color: #666;
+    color: #735fee;
 }
 
 .article-date {
@@ -530,20 +530,87 @@ nav:after{
 }
 
 .article-btn {
-    background-color: #666;
-    border-radius: #666;
+    background-color: #735fee;
+    border-radius: #735fee;
     color: #fff;
 }
 
 .article-btn:hover {
     background-color: #fff;
-    color: #666;
+    color: #735fee;
 }
 
 /* footer */
 footer {
-    background-color: #666;
+    background-color: #735fee;
     padding-top: 5em;
     padding-bottom: 40px;
     border-top: 5px solid #fff;
+}
+
+footer h2, footer p, footer a, footer span {
+    color: #D1D1D1;
+
+}
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-box {
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+
+footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer {
+    width: 80%;
+}
+
+.company-footer h2 {
+    margin-top: 20px;
+}
+
+.company-footer h2, .company-footer p {
+    margin-bottom: 20px;
+}
+
+.footer-list li{
+    margin-bottom: 15px;
+}
+
+.footer-list a {
+    transition: .5s;
+}
+
+.footer-list a:hover {
+    color: #fff;
+}
+
+.articles-footer {
+    width: 80%;
+    
+}
+
+.footer-list.footer-article-list span {
+    display: block;
+    float: none;
 }
