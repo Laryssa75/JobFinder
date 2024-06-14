@@ -662,3 +662,33 @@ footer .wrapper:after {
 }
 
 /* responsive */
+
+    /* responsive laptop */
+@media screen and (max-width: 1024px){
+    logo {
+        position: absolute;
+        left: 100px;
+    }
+
+    .nav-container ul {
+        display: inline-block;
+        /* justify-content: center;
+        text-align: center; */
+        padding: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav-container ul li {
+        /* position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none; */
+        margin: 0 15px;
+        display: inline-block;
+    }
+}
+
+
+
+
