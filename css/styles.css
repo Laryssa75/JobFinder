@@ -718,14 +718,20 @@ footer .wrapper:after {
         box-sizing: border-box;
         text-align: center;
     }
-
-    #lastjobs-container.wrapper, 
-    #status-container.wrapper, 
+ 
     #blog-container.wrapper, 
     .wrapper {
         max-width: 960px;
         padding-left: 2em;
         padding-right: 2em;
+    }
+    
+    #status-container.wrapper, 
+    #sendjobs-container.wrapper {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+
     }
 
     .footer-bottom p {
@@ -735,13 +741,52 @@ footer .wrapper:after {
         top: 160px;
         left: 0;
         width: 100%;
-        /* padding-top: 20px; */
         font-weight: normal;
         color: #fff;
         text-align: left;
      }
 }
 
+    /* responsive tablet */
+@media screen and (max-width: 768px){
 
+    #lastjobs-container.wrapper, 
+    #status-container.wrapper, 
+    #blog-container.wrapper, 
+    .wrapper {
+        max-width: 704px;
+        padding-left: 2em;
+        padding-right: 2em;
+        width: 100%;
+        color: #000000;
+        margin: 0 auto;
+    }
+
+    .footer-bottom::after {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 0.5%;
+        margin: 0 auto;
+        background-color: #fff;
+        margin: 20px auto 0 auto;
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        right: 10px;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 200px;
+        left: 0;
+        width: 100%;
+        font-weight: normal;
+        color: #fff;
+        text-align: left;
+     }
+}    
 
 
