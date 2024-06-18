@@ -663,7 +663,7 @@ footer .wrapper:after {
 /* responsive */
 
     /* responsive laptop */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .nav-container {
         display: flex;
         flex-direction: column;
@@ -748,7 +748,39 @@ footer .wrapper:after {
 }
 
     /* responsive tablet */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
+    .nav-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .company-box {
+        width: 46%;
+        padding-left: 1em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 1em;
+    }
+
+    .company-box .company-info p, .locality i, .locality p, .job-type span {
+        font-size: .8em;
+    }
+
+    .job-type {
+        right: 1em;
+    }
+
+    /*não entrou esse shadow*/
+    #senjobs-inner h2, #sendjobs-inner p {
+        text-shadow: .5px .5px #000;
+    }
+
+    .status-box {
+        width: 49.4%;
+        border: none;
+    }
 
     #lastjobs-container.wrapper, 
     #status-container.wrapper, 
