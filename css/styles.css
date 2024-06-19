@@ -30,19 +30,18 @@ header{
     display: none;
 }
 
-
 /* navbar */
 nav{
     position: fixed;
     top: 0;
-    height: 100px;
+    height: 10px;
     width: 100%;
     z-index: 1;
     background-color: #FFF;
     border-bottom: 1px solid #CCC;
 }
 
-nav:after{
+.nav:after{
     clear: both;
     content: "";
     display: block;
@@ -671,6 +670,11 @@ footer .wrapper:after {
 
     /* responsive laptop */
 @media screen and (max-width: 1024px) {
+    
+    #logo {
+        margin-left: auto;
+        margin-right: 20px;
+    }   
     .nav-container {
         display: flex;
         flex-direction: column;
@@ -680,29 +684,29 @@ footer .wrapper:after {
 
     nav{
         position: fixed;
-        top: 0;
+        top: 10px;
         height: 150px;
         width: 100%;
         z-index: 1;
         background-color: #FFF;
         border-bottom: 1px solid #CCC;
     }
-    
-    logo {
-        margin-left: auto;
-        margin-right: 20px;
-    }   
 
     .nav-container ul {
         display: inline-block;
         padding: 0;
         text-align: center;
         margin-bottom: 10px;
+        top: 50px;
     }
 
     .nav-container ul li {
         display: inline-block;
         margin: 0 15px;
+    }
+
+    #main-banner {
+        margin-top: -7px;
     }
 
     .search-form {
@@ -757,6 +761,14 @@ footer .wrapper:after {
     /* responsive tablet */
 @media screen and (max-width: 768px) {
 
+    #logo {
+        left: 4em;
+        height: 4em;
+        width: 4em;
+        margin-top: 5px;
+        top: 10px;
+    }
+
     .nav-container {
         width: 100%;
         padding: 0 15px;
@@ -764,9 +776,13 @@ footer .wrapper:after {
 
     .nav-container ul {
         margin-top: 5px;
-        margin-bottom: 20px;
-        top: 10px;
+        margin-bottom: 4570px;
+        top: -20px;
         padding: 2px;
+    }
+
+    #main-banner {
+        margin-top: 2em;
     }
 
     .company-box {
@@ -862,5 +878,88 @@ footer .wrapper:after {
         text-align: left;
      }
 }    
+
+@media screen and (max-width: 576px) {
+
+    .nav {
+        border-bottom: 1px solid #ccc;
+        top: 50px;
+    }
+
+    .nav-container .btn-menumobile {
+        display: block !important;
+        font-size: 32px;
+        left: 58%;
+        top: 45px;
+    }
+
+    .nav-container ul {
+        display: none;
+        position: relative;
+        top: -8px;
+        height: 3em;
+        line-height: 3em;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-container ul.open {
+        display: block;
+    }
+
+    .nav-container li {
+        display: block;
+        background-color: #fff;
+        margin: 0;
+        border-top: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-container li a {
+        font-size: 1em;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        width: 100%;
+    }
+
+    .nav-container li:hover {
+        background-color: #735fee;
+        color: #ffffff;
+    }
+    
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    #logo {
+        left: 4em;
+        height: 4em;
+        width: 4em;
+        margin-top: 2em;
+    }
+    
+    .btn-menumobile {
+        display: block;
+        font-size: 1.75em;
+        color: #CCC;
+        position: absolute;
+        right: 1.5em;
+        top: .75em;
+    }
+    
+    .open {
+        display: block !important;
+    }
+
+    #main-banner {
+        margin-top: 2em;
+    }
+
+
+}
 
 
