@@ -25,6 +25,12 @@ header{
     width: 100%;
 }
 
+/* hide on desktop */ 
+.nav-container .btn-menumobile {
+    display: none;
+}
+
+
 /* navbar */
 nav{
     position: fixed;
@@ -305,6 +311,7 @@ nav:after{
     background-size: cover;
     background-position: 0 25%;
     padding: 25em 0;
+    margin-bottom: 20px;
 }
 
 #sendjobs-container h2, #sendjobs-container p {
@@ -343,7 +350,7 @@ nav:after{
 .status-container {
     text-align: center;
     padding: 40em 0;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -366,8 +373,8 @@ nav:after{
     display: inline-block;
     text-align: center;
     width: 24.5%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     height: 100px;
@@ -755,6 +762,13 @@ footer .wrapper:after {
         padding: 0 15px;
     }
 
+    .nav-container ul {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        top: 10px;
+        padding: 2px;
+    }
+
     .company-box {
         width: 46%;
         padding-left: 1em;
@@ -779,13 +793,41 @@ footer .wrapper:after {
 
     .status-box {
         width: 49.4%;
-        border: none;
+        /* border: none; */
+    }
+
+    .status-box:nth-child(2) {
+        border-right: 1px solid #DDD;
+    }
+
+    #testmony-container h2, #testmony-container p {
+        color: #000;
+    }
+
+    /* não funciona */
+    .testmony-name {
+        color: #fff;
+    }
+
+    /* não funciona */
+    #tesmony-container .testmony-box {
+        width: 49.4%;
+    }
+
+    /* não funciona */
+    .article-box , .articles-wrapper {
+        flex: 1;
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 3em;
+        max-width: 300px;
+        text-align: center;
     }
 
     #lastjobs-container.wrapper, 
     #status-container.wrapper, 
-    #blog-container.wrapper, 
-    .wrapper {
+    #blog-container.wrapper {
         max-width: 704px;
         padding-left: 2em;
         padding-right: 2em;
