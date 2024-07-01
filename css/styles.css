@@ -288,7 +288,8 @@ nav{
 
 /* see more div */
 .btnjobs-container {
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .btn-jobs {
@@ -314,7 +315,7 @@ nav{
     background-size: cover;
     background-position: 0 25%;
     padding: 25em 0;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 #sendjobs-container h2, #sendjobs-container p {
@@ -353,8 +354,8 @@ nav{
 .status-container {
     text-align: center;
     padding: 40em 0;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .title-center {
@@ -407,6 +408,7 @@ nav{
     padding: 8em 0;
     max-height: 1300px;
     max-width: auto;
+    margin-top: 50px;
 }
 
 .wrapper .title-testmony, .wrapper .subtitle-testmony {
@@ -490,10 +492,11 @@ nav{
 #blog-container {
     text-align: center;
     padding: 5em 0;
+    margin-top: -30px;
 }
 
 #blog-container .p-center {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .articles-wrapper {
