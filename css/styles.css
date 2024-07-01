@@ -691,8 +691,8 @@ footer .wrapper:after {
 
     nav{
         position: fixed;
-        top: 10px;
-        height: 150px;
+        top: 0;
+        height: 200px;
         width: 100%;
         z-index: 1;
         background-color: #FFF;
@@ -710,6 +710,7 @@ footer .wrapper:after {
     .nav-container ul li {
         display: inline-block;
         margin: 0 15px;
+        font-size: 22px;
     }
 
     #main-banner {
@@ -742,15 +743,18 @@ footer .wrapper:after {
         max-width: 960px;
         padding-left: 2em;
         padding-right: 2em;
+        margin-right: 50px;
+        margin-left: -15px;
     }
     
     #status-container.wrapper, 
     #sendjobs-container.wrapper {
-        margin: 0 auto;
         display: block;
+        margin-left: 20px;
+        margin-right: 60px;
         text-align: center;
-
     }
+
 
     .footer-bottom p {
         margin: 0;
@@ -770,26 +774,25 @@ footer .wrapper:after {
 
     #logo {
         left: 4em;
-        height: 4em;
-        width: 4em;
-        margin-top: 5px;
-        top: 10px;
+        height: 6em;
+        margin-top: 30px;
     }
 
     .nav-container {
         width: 100%;
-        padding: 0 15px;
+        height: 120px;
+
     }
 
     .nav-container ul {
         margin-top: 5px;
-        margin-bottom: 4570px;
-        top: -20px;
-        padding: 2px;
+        margin-bottom: 10px;
+        top: 10px;
     }
 
     #main-banner {
         margin-top: 2em;
+        width: 100%;
     }
 
     .company-box {
@@ -886,6 +889,7 @@ footer .wrapper:after {
      }
 }    
 
+    /*responsive mobile*/
 @media screen and (max-width: 576px) {
 
     .nav {
