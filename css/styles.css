@@ -149,10 +149,10 @@ nav{
 }
 
 .wrapper {
-    max-width: 1200px;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 0;
 }
 
 #lastjobs-container h1 {
@@ -405,16 +405,16 @@ nav{
 #testmony-container {
     background: url('../img/scenario2.jpg') no-repeat;
     background-size: cover;
-    padding: 8em 0;
+    padding: 5em 0;
     max-height: 1300px;
     max-width: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .wrapper .title-testmony, .wrapper .subtitle-testmony {
     color: #ffffff;
     position: relative;
-    top: -50px;
+    top: -20px;
 }
 
 #testmony-container h2, #testmony-container p {
@@ -493,13 +493,14 @@ nav{
     display: inline-block;
 }
 
-#blog-container .p-center {
-    margin-bottom: 60px;
+#blog-container p {
+    margin-bottom: 30px;
 }
 
 .articles-wrapper {
     display: inline-block;
-    margin: 50px auto;
+    margin: 30px auto;
+    vertical-align: top;
 }
 
 .article-box {
@@ -511,6 +512,7 @@ nav{
     padding: 0 1%;
     text-align: left;
     margin-bottom: 30px;
+    vertical-align: top;
 }
 
 .article-box img {
@@ -638,7 +640,7 @@ footer .wrapper:after {
 
 .footer-bottom {
    padding-top: 20px;
-   padding-bottom: 60px;
+   padding-bottom: 90px;
    text-align: center;
    width: 100%;
    position: relative; 
@@ -653,7 +655,7 @@ footer .wrapper:after {
     background-color: #fff;
     margin: 20px auto 0 auto;
     position: absolute;
-    bottom: 40px;
+    bottom: 110px;
     left: 10px;
     right: 10px;
 }
@@ -741,11 +743,14 @@ footer .wrapper:after {
         text-align: center;
     }
  
-    #blog-container.wrapper, 
-    .wrapper {
-        max-width: 960px;
+    #blog-container .wrapper {
+        /* max-width: 940px; */
         margin-right: 30px;
         margin-left: 30px;
+    }
+
+    #blog-container p {
+        margin-bottom: 20px;
     }
     
     #status-container.wrapper, 
@@ -754,6 +759,9 @@ footer .wrapper:after {
         text-align: center;
     }
 
+    .articles-wrapper {
+        margin-top: 20px;
+    }
 
     .footer-bottom p {
         margin: 0;
@@ -780,7 +788,6 @@ footer .wrapper:after {
     .nav-container {
         height: 100px;
         max-width: 768px;
-
     }
 
     .nav-container ul {
@@ -837,23 +844,26 @@ footer .wrapper:after {
         margin-left: 30px;
         margin-right: 30px;
     }
-    
-    .testmony-box p {
-        background-color: #735fee;
-        color: #fff;
-    }
 
     /* não funciona */
+    .testmony-container h2 {
+        color: #ddd;
+    }
+
     .testmony-container {
         display: flexbox;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
-    /* .testmony-box {
+    .testmony-box {
         width: 50%;
         margin-bottom: 1%;
-    } */
+    }
+
+    .testmony-box p {
+        background-color: #735fee;
+        color: #fff;
+    }
 
     #blog-container .wrapper { 
         padding-left: 2em;
@@ -1021,6 +1031,9 @@ footer .wrapper:after {
         top: 10px;
     }
     
+    #sendjobs-container {
+        margin-bottom: 30px;
+    }
     #sendjobs-inner {
         display: block;
         text-align: center;
@@ -1055,6 +1068,10 @@ footer .wrapper:after {
 
     .status-box:not(:first-child) {
         border-right: none;
+    }
+
+    .articles-wrapper {
+        margin-bottom: 10px;
     }
 
     .footer-box img {
