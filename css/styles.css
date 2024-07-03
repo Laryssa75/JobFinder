@@ -491,8 +491,6 @@ nav{
 /* blog container */
 #blog-container {
     display: inline-block;
-    padding: 5em 0;
-    margin-top: -30px;
 }
 
 #blog-container .p-center {
@@ -501,16 +499,18 @@ nav{
 
 .articles-wrapper {
     display: inline-block;
-    margin-right: 20px;
+    margin: 50px auto;
 }
 
 .article-box {
+    display: inline-block;
     flex: 1;
     margin: 10px;
     box-sizing: border-box;
     width: 31%;
     padding: 0 1%;
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .article-box img {
@@ -555,14 +555,13 @@ nav{
 /* footer */
 footer {
     background-color: #735fee;
-    padding-top: 5em;
+    padding-top: 20px;
     padding-bottom: 40px;
     border-top: 5px solid #fff;
 }
 
 footer h2, footer p, footer a, footer span {
     color: #fff;
-
 }
 
 footer h2 {
@@ -698,7 +697,7 @@ footer .wrapper:after {
     nav{
         position: fixed;
         top: 0;
-        height: 200px;
+        height: 150px;
         z-index: 1;
         background-color: #FFF;
         border-bottom: 1px solid #CCC;
@@ -752,8 +751,6 @@ footer .wrapper:after {
     #status-container.wrapper, 
     #sendjobs-container.wrapper {
         display: block;
-        margin-left: 20px;
-        margin-right: 60px;
         text-align: center;
     }
 
@@ -847,14 +844,14 @@ footer .wrapper:after {
     }
 
     /* não funciona */
-    .testmony-container  {
-        display: block;
-        width: 100%;
-        gap: 1%;
+    .testmony-container {
+        display: flexbox;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     /* .testmony-box {
-        width: 49%;
+        width: 50%;
         margin-bottom: 1%;
     } */
 
@@ -871,18 +868,28 @@ footer .wrapper:after {
     }
 
     .article-box {
-        display: block;
+        display: inline-block;
         width: 100%;
         max-height: 5%;
         margin-bottom: 30px;
         margin-top: 10px;
         padding: 0;
     }
+
+    .article-box h4 {
+        margin-top: 10px;
+    }
+
     .article-box img {
         width: 100%;
         border-radius: 5px;
         margin-bottom: 10px;
         max-height: 300px;
+    }
+
+    .footer-box img {
+        height: 210px;
+        width: 200px;
     }
      
     .footer-bottom::after {
@@ -917,7 +924,7 @@ footer .wrapper:after {
 
     .nav {
         border-bottom: 1px solid #ccc;
-        top: 50px;
+        top: 10px;
     }
 
     .nav-container .btn-menumobile {
@@ -931,7 +938,7 @@ footer .wrapper:after {
         display: none;
         position: relative;
         top: -8px;
-        height: 3em;
+        height: 50px;
         line-height: 3em;
         padding: 0;
         margin: 0;
@@ -993,5 +1000,83 @@ footer .wrapper:after {
         margin-top: 2em;
     }
 
+    
+    #lastjobs-container .clickarea img {
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    #lastjobs-container .clickarea h3 {
+        font-size: 16px;
+    }
+    
+    #lastjobs-container .clickarea p {
+        font-size: 12px;
+    }
+    
+    #lastjobs-container .locality p {
+        font-size: 9px;
+        top: 10px;
+    }
+    
+    #sendjobs-inner {
+        display: block;
+        text-align: center;
+    }
+
+    #sendjobs-inner h2{
+        font-size: 30px;
+        max-width: 520px;
+    }
+
+    #sendjobs-inner p {
+        font-size: 18px;
+        max-width: 520px;
+    }
+
+    #sendjobs-inner .light-btn {
+        text-align: center;
+    }
+
+    #status-container .wrapper {
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+
+    .status-box {
+        width: 90%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    } 
+
+    .status-box:not(:first-child) {
+        border-right: none;
+    }
+
+    .footer-box img {
+        height: 130px;
+        width: 100px;
+    }
+
+    .footer-box h2, .articles-footer h2 {
+        font-size: 24px;
+    }
+
+    .footer-box p, 
+    .articles-footer ul li a {
+        font-size: 16px;
+    }
+
+    .articles-footer span {
+        font-weight: 12px;
+    }
+
+    .articles-footer i {
+        font-weight: 40px;
+    }
 
 }
