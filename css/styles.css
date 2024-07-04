@@ -433,8 +433,8 @@ nav{
 #testmony-container .testmony-box {
     display: inline-block;
     width: 24.5%;
-    text-align: center;
     color: #fff;
+    text-align: center;
 }
 
 #testmony-container .testmony-box .testmony-msg {
@@ -446,6 +446,7 @@ nav{
     position: relative;
     margin: 0 20px;
     font-size: italic;
+    text-align: center;
 }
 
 .testmony-msg::after {
@@ -480,7 +481,7 @@ nav{
     font-size: 25px;
     text-align: center;
     border-radius: 50%;
-    margin-right: 70px;
+    margin-right: 50px;
     color: #fff;
     display: inline-block;
     background-color: #000000;
@@ -655,7 +656,7 @@ footer .wrapper:after {
     background-color: #fff;
     margin: 20px auto 0 auto;
     position: absolute;
-    bottom: 110px;
+    bottom: 70px;
     left: 10px;
     right: 10px;
 }
@@ -695,11 +696,10 @@ footer .wrapper:after {
         width: 100%;
     }
 
-
     nav{
         position: fixed;
         top: 0;
-        height: 150px;
+        height: 180px;
         z-index: 1;
         background-color: #FFF;
         border-bottom: 1px solid #CCC;
@@ -710,12 +710,12 @@ footer .wrapper:after {
         padding: 0;
         text-align: center;
         margin-bottom: 10px;
-        top: 50px;
+        top: 10px;
     }
 
     .nav-container ul li {
         display: inline-block;
-        font-size: 22px;
+        font-size: 26px;
     }
 
     #main-banner {
@@ -786,13 +786,17 @@ footer .wrapper:after {
     }
 
     .nav-container {
-        height: 100px;
+        height: 110px;
         max-width: 768px;
     }
 
     .nav-container ul {
         margin-top: -20px;
         margin-bottom: 10px;
+    }
+
+    .nav-container ul li {
+        font-size: 22px;
     }
 
     #main-banner {
@@ -837,7 +841,7 @@ footer .wrapper:after {
     .wrapper .title-testmony, .wrapper .subtitle-testmony {
         color: #000000;
         text-align: center;
-        margin: 50px auto;
+        margin: 30px auto;
     }
 
     #lastjobs-container {
@@ -850,14 +854,28 @@ footer .wrapper:after {
         color: #ddd;
     }
 
-    .testmony-container {
-        display: flexbox;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    #testmony-container .testmony-box {
+        display: inline-block;
+        width: 49.4%;      
+        margin-bottom: 10px;  
+        height: auto;
+        text-align: center;
     }
-    .testmony-box {
-        width: 50%;
-        margin-bottom: 1%;
+
+    #testmony-container h2 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+    }
+
+    #testmony-container .testmony-name p {
+        padding: 5px 10px;
+        color: #000;
+    }
+
+    .testmony-box img {
+        width: 160px;
+        height: 180px;
     }
 
     .testmony-box p {
