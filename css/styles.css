@@ -158,7 +158,7 @@ nav{
 #lastjobs-container h1 {
     font-size: 36px;
     margin-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 #lastjobs-container ul {
@@ -405,8 +405,7 @@ nav{
 #testmony-container {
     background: url('../img/scenario2.jpg') no-repeat;
     background-size: cover;
-    padding: 5em 0;
-    max-height: 1300px;
+    padding: 5em 2em;
     max-width: auto;
     margin-top: 30px;
 }
@@ -437,6 +436,19 @@ nav{
     text-align: center;
 }
 
+.testmony-box {
+    text-align: center;
+    justify-items: center;
+    margin: 0 auto;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.testmony-msg, .testmony-name, .testmony-box img {
+    margin: 10px auto;
+    display: block;
+}
+
 #testmony-container .testmony-box .testmony-msg {
     background-color: #fff;
     color: #666;
@@ -447,6 +459,17 @@ nav{
     margin: 0 20px;
     font-size: italic;
     text-align: center;
+}
+
+.testmony-msg {
+    background-color: #fff;
+    color: #666;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    margin-top: 20px;
+    font-size: italic;
 }
 
 .testmony-msg::after {
@@ -472,7 +495,8 @@ nav{
     border-radius: 50%;
     background-color: #000000;
     margin-top: 30px;
-    margin-right: 60px;
+    right: 40px;
+    left: 20px;
     text-align: center;
 }
 
@@ -481,7 +505,7 @@ nav{
     font-size: 25px;
     text-align: center;
     border-radius: 50%;
-    margin-right: 50px;
+    margin-right: 20px;
     color: #fff;
     display: inline-block;
     background-color: #000000;
@@ -665,13 +689,22 @@ footer .wrapper:after {
    margin: 0;
    padding: 0;
    position: relative;
-   top: 140px;
+   top: 180px;
    left: 0;
    width: 100%;
    /* padding-top: 20px; */
    font-weight: normal;
    color: #fff;
    text-align: left;
+}
+
+/* find jobs page */
+#findjobs #search-form {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+    background-color: #735fee;
+    border-top: 5px solid #0000E6;
 }
 
 /* responsive */
@@ -839,7 +872,7 @@ footer .wrapper:after {
     }
 
     .wrapper .title-testmony, .wrapper .subtitle-testmony {
-        color: #000000;
+        color: #fff;
         text-align: center;
         margin: 30px auto;
     }
@@ -849,8 +882,7 @@ footer .wrapper:after {
         margin-right: 30px;
     }
 
-    /* não funciona */
-    .testmony-container h2 {
+    .testmony-container h2, .testmony-container p {
         color: #ddd;
     }
 
@@ -1005,9 +1037,9 @@ footer .wrapper:after {
     }
     
     #logo {
-        left: 4em;
-        height: 4em;
-        width: 4em;
+        left: 20px;
+        height: 6em;
+        width: 5em;
         margin-top: 2em;
     }
     
@@ -1016,8 +1048,8 @@ footer .wrapper:after {
         font-size: 1.75em;
         color: #CCC;
         position: absolute;
-        right: 1.5em;
-        top: .75em;
+        right: 30px;
+        top: 40px;
     }
     
     .open {
@@ -1092,6 +1124,45 @@ footer .wrapper:after {
         margin-bottom: 10px;
     }
 
+    #lastjobs-container {
+        padding: 5em 0;
+    }
+
+    .locality {
+        display: none;
+    }
+
+    .company-box .company-info {
+        margin-left: 2em;
+        text-align: center;
+        left: 4em;
+        width: 8em;
+        font-size: 25px;
+    }
+
+    .job-type {
+        width: 22%;
+    }
+
+    .company-box .company-info h3 {
+        font-size: .8em;
+    }
+
+    #testmony-container {
+        text-align: center;
+    }
+
+    #testmony-container .testmony-box {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .footer-box {
+        display: block;
+        width: 100%;
+    }
+
     .footer-box img {
         height: 130px;
         width: 100px;
@@ -1112,6 +1183,11 @@ footer .wrapper:after {
 
     .articles-footer i {
         font-weight: 40px;
+    }
+
+    .footer-bottom p {
+        top: 80px;
+        text-align: center;
     }
 
 }

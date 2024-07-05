@@ -30,10 +30,11 @@
                     </ul>
                 </div>
             </nav>
-            <div id="main-banner">
-                <div id="search-form" class="titulo">
-                    <h1>A maneira mais fácil de encontrar seu novo emprego</h1>
-                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos sonhos.</p>
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Busque a sua vaga</h1>
+            <div id="job-filter">
+                <div id="search-form">
                     <form>
                         <input type="text" name="job" placeholder="Digite o cargo">
                         <select name="region">
@@ -46,9 +47,22 @@
                     </form>
                 </div>
             </div>
-        </header>
-        <main id="lastjobs-container" class="wrapper">
-            <h1>Últimas vagas enviadas</h1>
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked><label>CLT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>PJ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Home Office</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Free Lancer</label>
+                    </li>
+                </ul>
+            </div>
             <ul>
                 <li>
                     <a href="#" class="clickarea">
@@ -124,113 +138,9 @@
                 </li>
             </ul>
             <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">Ver mais vagas</a>
+                <a href="#" class="btn-jobs">Carregar mais vagas</a>
             </div>
         </main>
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>Envie uma vaga que será vista por milhares de candidatos</h2>
-                <p>Se você é uma empresa que precisa divulgar melhor as vagas que estão em 
-                    aberto, aqui é o melhor lugar para isso, você terá todo o suporte que precisar,
-                    com notificação e atualização dos status do seu processo seletivo.</p>
-                <a href="#" class="light-btn">Enviar vaga</a>
-            </div>
-        </section>
-        <section id="status-container" class="wrapper">
-            <h2 class="title-center">Estatísticas do JobFinder</h2>
-            <p class="p-center">Aqui mostraremos todas as estatísticas sobre os processos seletivos dos site todo.</p>
-            <div class="status-box">
-                <span class="status-qtd">150</span>
-                <p class="status-text">Vagas Abertas</p>
-            </div>
-            <div class="status-box">
-                <span class="status-qtd">200</span>
-                <p class="status-text">Vagas Fechadas</p>
-            </div>
-            <div class="status-box">
-                <span class="status-qtd">150</span>
-                <p class="status-text">Candidatos</p>
-            </div>
-            <div class="status-box">
-                <span class="status-qtd">100</span>
-                <p class="status-text">Empresas Participantes</p>
-            </div>
-        </section>
-        <section id="testmony-container">
-            <div class="wrapper">
-                <h2 class="title-testmony">Veja o que os candidatos dizem</h2>
-                <p class="p-center subtitle-testmony">Nossos processos estão focados totalmente na melhor
-                    comunicação e troca de experiência, afim de ajudar a empresa a achar
-                    o melhor pessoa para sua empresa e para o candidato, a melhor vaga, 
-                    a que esteja mais adequada a seus interesses e necessidades.</p>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Eu gostei muito do acompanhamento pela
-                    plataforma poi sentiram meu sabor, tiraram todas minhas dúvidas e 
-                    o que eu mais gostei foi que me deram retorno de todas as etapas do 
-                    processo.</p>
-                    <img src="img/pumpkin.png" alt="pumpkin">
-                    <p class="testmony-name">Aboburudo</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Sou uma pessoa mais introvertida e com mais seriedade,
-                        nem sempre consigo que em entrevistas possas olhar além da minha
-                        postura, e enteder que sou muito responsável e focada no meu
-                        trabalho, aqui eu encontrei quem poderia olhar para minhas qualidades.</p>
-                        <img src="img/girl.png" alt="girl">
-                        <p class="testmony-name">Sincerina</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Consegui muito ser visto, mesmo que nem sempre 
-                        consigo ser visto, pela minha habilidade de poder passar pelas paredes,
-                        cosegui ser visto, foi muito importante e decisivo na minha vida.</p>
-                    <img src="img/ghost.png" alt="ghost">
-                    <p class="testmony-name">Gasparzinho</p>    
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Sou muito versátil e flexível, pude achar um ambiente
-                    de trabalho em que eu possa crescer, saber que vou conseguir de fato entender
-                    o que querem de mim.</p>
-                    <img src="img/skeleton.png" alt="skeleton">
-                    <p class="testmony-name">Esquelito</p>
-                </div>
-            </div>
-        </section>
-        <section id="blog-container" class="wrapper">
-            <h2 class="title-center">Últimos artigos do nosso blog</h2>
-            <p class="p-center">Vamos conhecer um pouco mais do que todos os nossos
-                candidatos e recrutadores acharam da experiência de fazer parte da 
-                nossa comunidade.</p>
-            <div class="articles-wrapper">
-                <div class="article-box">
-                    <img src="img/scenario3.jpg" alt="blog1">
-                    <h4><a href="#">Article title</a></h4>
-                    <p class="article-date">05 de Maio de 2024 | 10 comentários</p>
-                    <p class="article-resume">Eu gostei muito do acompanhamento pela
-                    plataforma poi sentiram meu sabor, tiraram todas minhas dúvidas e 
-                    o que eu mais gostei foi que me deram retorno de todas as etapas do 
-                    processo.</p>
-                    <a href="#" class="article-btn light-btn">Ler post</a>
-                </div>
-                <div class="article-box">
-                    <img src="img/scenario4.jpg" alt="blog2">
-                    <h4><a href="#">Article title</a></h4>
-                    <p class="article-date">21 de Janeiro de 2024 | 30 comentários</p>
-                    <p class="article-resume">Sou muito versátil e flexível, pude achar um ambiente
-                    de trabalho em que eu possa crescer, saber que vou conseguir de fato entender
-                    o que querem de mim.</p>
-                    <a href="#" class="article-btn light-btn">Ler post</a>
-                </div>
-                <div class="article-box">
-                    <img src="img/scenario5.jpg" alt="blog3">
-                    <h4><a href="#">Article title</a></h4>
-                    <p class="article-date">15 de Setembro de 2024 | 15 comentários</p>
-                    <p class="article-resume">Consegui muito ser visto, mesmo que nem sempre 
-                    consigo ser visto, pela minha habilidade de poder passar pelas paredes,
-                    cosegui ser visto, foi muito importante e decisivo na minha vida.</p>
-                    <a href="#" class="article-btn light-btn">Ler post</a>
-                </div>
-            </div>
-        </section>
         <footer>
             <div class="wrapper">
                 <div class="footer-box">
