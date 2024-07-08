@@ -94,7 +94,6 @@ nav{
     padding-top: 15em;
     padding-bottom: 15em;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 #search-form h1 {
@@ -169,10 +168,46 @@ nav{
     color: #735fee;
 }
 
-#findjobs #lastjobs-container ul {
+#lastjobs-container ul {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top: 0;
+}
+
+#type-filter {
+    text-align: left;
+}
+
+#type-filter ul {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+}
+
+#type-filter ul li {
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+}
+
+#type-filter ul li:nth-child(1), 
+#type-filter ul li:nth-child(2), 
+#type-filter ul li:nth-child(3) {
+    border-right: 0;
+}
+
+#type-filter label {
+   text-transform: uppercase;
+   color: #666;
+   font-weight: bold;
+   margin-left: .5em; 
 }
 
 #type-filter {
@@ -459,3 +494,337 @@ footer .wrapper:after {
    color: #fff;
    text-align: left;
 }
+
+/* responsive */
+
+    /* responsive laptop */
+    @media screen and (max-width: 1024px) {
+    
+        html, body {
+            overflow-x: hidden;
+        }
+    
+        #logo {
+            width: 7em;
+            height: 8em;
+        }   
+    
+        .nav-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+    
+        nav{
+            position: fixed;
+            top: 0;
+            height: 180px;
+            z-index: 1;
+            background-color: #FFF;
+            border-bottom: 1px solid #CCC;
+        }
+    
+        .nav-container ul {
+            display: inline-block;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 10px;
+            top: 10px;
+        }
+    
+        .nav-container ul li {
+            display: inline-block;
+            font-size: 26px;
+        }
+    
+        .search-form {
+            padding-top: 25em;
+            padding-bottom: 5em;
+        }
+    
+        .search-form form {
+            width: 60%;
+            position: relative;
+            margin: 0 auto;
+        }
+    
+        #search-form form input, 
+        #search-form form select {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            width: 40%;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /*find jobs page*/
+
+        #search-form input[type=submit] {
+            margin-bottom: 0;
+        }
+
+        #type-filter ul li {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        #type-filter ul li:last-child {
+           border-bottom: none;
+           border-right: none; 
+        }
+
+        #type-filter ul li:nth-child(1), 
+        #type-filter ul li:nth-child(2),
+        #type-filter ul li:nth-child(3) {
+            border-left: none;
+        }
+         
+        .footer-bottom p {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 160px;
+            left: 0;
+            width: 100%;
+            font-weight: normal;
+            color: #fff;
+            text-align: left;
+         }
+    }
+    
+        /* responsive tablet */
+    @media screen and (max-width: 768px) {
+    
+        #logo {
+            width: 5em;
+            height: 6em;
+            margin-top: 20px;
+        }
+    
+        .nav-container {
+            height: 110px;
+            max-width: 768px;
+        }
+    
+        .nav-container ul {
+            margin-top: -20px;
+            margin-bottom: 10px;
+        }
+    
+        .nav-container ul li {
+            font-size: 22px;
+        }
+    
+        .company-box {
+            width: 46%;
+            /* padding-left: 1em; */
+        }
+    
+        .company-box .company-info h3 {
+            font-size: 1em;
+        }
+    
+        .company-box .company-info p, .locality i, .locality p, .job-type span {
+            font-size: .8em;
+        }
+    
+        .job-type {
+            right: 1em;
+        }
+    
+        #lastjobs-container {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    
+        .footer-box img {
+            height: 210px;
+            width: 200px;
+        }
+         
+        .footer-bottom::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 0.5%;
+            margin: 0 auto;
+            background-color: #fff;
+            margin: 20px auto 0 auto;
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+            right: 10px;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 200px;
+            left: 0;
+            width: 100%;
+            font-weight: normal;
+            color: #fff;
+            text-align: left;
+         }
+    }    
+    
+        /*responsive mobile*/
+    @media screen and (max-width: 576px) {
+    
+        .nav {
+            border-bottom: 1px solid #ccc;
+            top: 10px;
+        }
+    
+        .nav-container .btn-menumobile {
+            display: block !important;
+            font-size: 32px;
+            left: 58%;
+            top: 45px;
+        }
+    
+        .nav-container ul {
+            display: none;
+            position: relative;
+            top: -8px;
+            height: 50px;
+            line-height: 3em;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+    
+        .nav-container ul.open {
+            display: block;
+        }
+    
+        .nav-container li {
+            display: block;
+            background-color: #fff;
+            margin: 0;
+            border-top: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        .nav-container li a {
+            font-size: 1em;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            width: 100%;
+        }
+    
+        .nav-container li:hover {
+            background-color: #735fee;
+            color: #ffffff;
+        }
+        
+        html, body {
+            overflow-x: hidden;
+        }
+        
+        #logo {
+            left: 20px;
+            height: 6em;
+            width: 5em;
+            margin-top: 2em;
+        }
+        
+        .btn-menumobile {
+            display: block;
+            font-size: 1.75em;
+            color: #CCC;
+            position: absolute;
+            right: 30px;
+            top: 40px;
+        }
+        
+        .open {
+            display: block !important;
+        }
+        
+        #lastjobs-container .clickarea img {
+            height: 60px;
+            width: 60px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        #lastjobs-container .clickarea h3 {
+            font-size: 16px;
+        }
+        
+        #lastjobs-container .clickarea p {
+            font-size: 12px;
+        }
+        
+        #lastjobs-container .locality p {
+            font-size: 9px;
+            top: 10px;
+        }
+    
+        #lastjobs-container {
+            padding: 5em 0;
+        }
+    
+        .locality {
+            display: none;
+        }
+    
+        .company-box .company-info {
+            margin-left: 2em;
+            text-align: center;
+            left: 4em;
+            width: 8em;
+            font-size: 25px;
+        }
+    
+        .job-type {
+            width: 22%;
+        }
+    
+        .company-box .company-info h3 {
+            font-size: .8em;
+        }
+    
+        .footer-box {
+            display: block;
+            width: 100%;
+        }
+    
+        .footer-box img {
+            height: 130px;
+            width: 100px;
+        }
+    
+        .footer-box h2, .articles-footer h2 {
+            font-size: 24px;
+        }
+    
+        .footer-box p, 
+        .articles-footer ul li a {
+            font-size: 16px;
+        }
+    
+        .articles-footer span {
+            font-weight: 12px;
+        }
+    
+        .articles-footer i {
+            font-weight: 40px;
+        }
+    
+        .footer-bottom p {
+            top: 80px;
+            text-align: center;
+        }
+    
+    }
